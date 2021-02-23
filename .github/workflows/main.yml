@@ -34,5 +34,5 @@ jobs:
         run: npm install -g surge
         
       - name: Execute Surge
-        run: surge ./ saas_practice.surge.sh --token ${{secret.surge_deploy_key}}
+        run: surge ./ saas_practice.surge.sh --token ${{secrets.surge_deploy_key}}
       
