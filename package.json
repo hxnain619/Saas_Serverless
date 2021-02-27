@@ -1,0 +1,38 @@
+{
+    "name": "Saas_Serverless",
+    "version": "1.0.0",
+    "description": "learning Saas Serverless technologies",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --mode development",
+        "format": "prettier --write \"src/**/*.js\"",
+        "build": "webpack --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hxnain619/Saas_Serverless.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hxnain619/Saas_Serverless/issues"
+    },
+    "homepage": "https://github.com/hxnain619/Saas_Serverless#readme",
+    "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.8",
+        "@babel/preset-env": "^7.13.8",
+        "@babel/preset-react": "^7.12.13",
+        "babel-loader": "^8.2.2",
+        "html-webpack-plugin": "^5.2.0",
+        "prettier": "2.2.1",
+        "webpack": "^5.24.2",
+        "webpack-cli": "^4.5.0",
+        "webpack-dev-server": "^3.11.2"
+    }
+}
