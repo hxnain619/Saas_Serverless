@@ -29,6 +29,8 @@ jobs:
       with:
         cmd: install
         
+    - name: Update NodeJS
+      run: brew upgrade node
     - name: Build React App
       run: yarn build
       
