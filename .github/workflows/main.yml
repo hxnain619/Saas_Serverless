@@ -25,10 +25,6 @@ jobs:
       with:
         node-version: 12
 
-      # updating node
-    - name: Update Node
-      run: brew upgrade node
-        
     - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install
