@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Sass Practice
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -39,4 +37,5 @@ jobs:
     
     # Deploy Surge
     - name: Deploy React App to Surge
-      run: surge ./build zeeshan-reactnewyarn.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build saas_practice.surge.sh --token ${{secrets.surge_deploy_key}}
+
