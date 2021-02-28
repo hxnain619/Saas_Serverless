@@ -30,7 +30,7 @@ jobs:
         cmd: install --ignore-engines
         
     - name: Build React App
-      run: sudo npm install && npm run build
+      run: npm install && CI=false npm run build
       
     # Install Surge
     - name: Install Surge
@@ -38,5 +38,5 @@ jobs:
     
     # Deploy Surge
     - name: Deploy React App to Surge
-      run: surge ./build saas_practice.surge.sh --token ${{secrets.surge_deploy_key}}
+      run: surge ./build https://saas_practice.surge.sh --token ${{secrets.surge_deploy_key}}
 
