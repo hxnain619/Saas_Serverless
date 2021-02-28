@@ -30,7 +30,7 @@ jobs:
         cmd: install --ignore-engines
         
     - name: Build React App
-      run: npm install && CI=false npm run build
+      run: sudo npm install && CI=false npm run build
       
     # Install Surge
     - name: Install Surge
